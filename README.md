@@ -20,9 +20,17 @@ The following are needed from exercise 1.5 onward. Notice, that not everything i
 
 ## Exercise 1.11 -> starting project
 
-To start the server in production mode: `npm start`
+To run the backend application run the following from the project root:
 
-Test that the project is running by going to <http://localhost:8000>
+```
+docker build -t backend-example-docker .
+```
+
+```
+docker run -v c:/logs/logs.txt:/usr/app/logs.txt -p 8000:8000 backend-example-docker
+```
+
+After running the commands, visit http://localhost:8000 to verify the application successfully runs on Docker container.
 
 ## Exercise 1.12 -> accepting connections
 

@@ -62,5 +62,5 @@ typings/
 
 logs.txt
 
-# Don't want to spoil the exercise solutions
-Dockerfile*
+
+
